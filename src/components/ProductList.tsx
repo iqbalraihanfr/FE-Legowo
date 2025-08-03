@@ -88,7 +88,7 @@ export default function ProductList({ selectedCategory, sortOption, searchQuery 
             name_en: product.nama,
             description_id: product.deskripsi,
             description_en: product.deskripsi,
-            images: [`http://127.0.0.1:8000/uploads/${product.gambar}`],
+            images: [`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}/uploads/${product.gambar}`],
             category: product.kategori,
             price: product.harga,
             ageRange: '',
